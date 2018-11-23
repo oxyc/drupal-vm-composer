@@ -26,10 +26,10 @@
     },
     "autoload": {
         "psr-4": {
-            "DrupalVmComposer\\": "src/"
+            "DrupalVM\\Composer\\": "src/"
         }
     },
     "extra": {
-        "class": "DrupalVmComposer\\Plugin"
+        "class": "DrupalVM\\Composer\\Plugin"
     }
 }

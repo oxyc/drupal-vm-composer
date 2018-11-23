@@ -12,5 +12,5 @@ ENV['DRUPALVM_PROJECT_ROOT'] ||= __dir__
 ENV['DRUPALVM_CONFIG_DIR'] ||= config.fetch('config_dir', nil)
 ENV['DRUPALVM_DIR'] ||= "#{vendor_dir}/geerlingguy/drupal-vm"
 
-# Load the real Vagrantfile
+# Load the Drupal VM Vagrantfile
 load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"

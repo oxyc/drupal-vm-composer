@@ -1,10 +1,10 @@
 <?php
 /**
  * @file
- * Contains DrupalVmComposer\Plugin.
+ * Contains DrupalVM\Composer\Plugin.
  */
 
-namespace DrupalVmComposer;
+namespace DrupalVM\Composer;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
@@ -52,7 +52,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
     public function addVagrantfile(Event $event) {
 
         $baseDir = dirname(Factory::getComposerFile());
-        $source = __DIR__ . '/../../Vagrantfile';
+        $source = __DIR__ . '/../Vagrantfile';
         $target =  $baseDir . '/Vagrantfile';
 
         if (file_exists($source)) {
